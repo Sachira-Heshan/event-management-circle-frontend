@@ -3,6 +3,7 @@ import Logo from "../assets/img/event-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -55,36 +56,32 @@ const Header = () => {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between">
                   <div className="d-flex gap-4">
                     <li className="nav-item">
-                      <a
-                        className="nav-link active"
-                        aria-current="page"
-                        href="/"
-                      >
+                      <Link className="nav-link active" to="/">
                         Manage Your Event
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/">
+                      <Link className="nav-link" to="/blog">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                   </div>
                   <div className="d-flex gap-4">
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link border border-1 border-dark rounded px-4"
-                        href="/"
+                        to="/register"
                       >
                         Register
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link rounded bg-dark text-white border border-dark px-4"
-                        href="/"
+                        to="/login"
                       >
                         Login
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item dropdown">
                       <a
